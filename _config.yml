@@ -1,0 +1,19 @@
+# Dependencies
+markdown:         rdiscount
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            My lab journal
+url:              /
+paginate:         5
+baseurl:          /
+author:
+  name:           Your Name
+  url:            http://research.physics.illinois.edu/QI/Photonics/
+  email:          netid4@illinois.edu
+  
+pages_list:       
+  Archive: 'archive/'
