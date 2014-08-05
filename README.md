@@ -149,7 +149,7 @@ author:
   email:          rholmes4@illinois.edu
 ```
 
-If you've been running ```jekyll server --watch```, quit and run jekyll again using ```jekyll build```. Jekyll doesn't automatically implment changes to the ```_config.yml``` file because it's only used when Jekyll first starts running.
+If you've been running ```jekyll server --watch```, quit and run jekyll again using ```jekyll build```. Jekyll doesn't automatically implement changes to the ```_config.yml``` file because it's only used when Jekyll first starts running.
 
 Back in WinSCP, navigate to your local ```my-lab-journal``` folder, select everything in the ```_site``` folder, and drag it over to the ```public_html``` folder on your webspace. You'll do this every time you update your lab journal--maybe sure to select and copy everything, and choose "yes" if WinSCP asks if you want to overwrite existing files.
 
