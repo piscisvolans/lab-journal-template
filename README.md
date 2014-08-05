@@ -10,18 +10,18 @@ The template given here is a slightly modified version of [Poole](https://github
 ## Table of Contents
 
 * [Introduction](#introduction)
-  * [What is Jekyll?](#what-is-jekyll)
 * [Installation and setup](#installation-and-setup)
   * [Download the files in this GitHub directory](#download-the-files-in-this-github-repository)
   * [Install Ruby and Jekyll](#install-ruby-and-jekyll)
 * [Running Jekyll](#running-jekyll)
   * [Hosting your lab journal locally](#hosting-your-lab-journal-locally)
 * [Writing and editing entries](#writing-and-editing-entries)
+  * [More about Markdown](#more-about-markdown)
 
 Introduction
 ------------------
 
-This guide explains how to set up an online lab journal using a tool called Jekyll. You could also set up a lab journal on a blogging service like Wordpress or Blogger, which might look less complicated. Here are a few reasons to consider doing it with Jekyll:
+This guide explains how to set up an online lab journal using a tool called Jekyll. You could also set up a lab journal on a blogging service like Wordpress or Blogger, which might seem less complicated. Here are a few reasons to consider doing it with Jekyll:
 
 1. You have complete control over the appearance and function of your lab journal website. This guide provides a basic template which you can customize any way you want.
 2. All the files for your lab journal will be on your computer, so there will be no need to export them from a blogging service if you need to back up your entries or store them somewhere else. If you're an Illinois engineering student, you can also host your lab journal on your free webspace at http://web.engr.illinois.edu/~yournetid and add optional pasword protection.
@@ -107,16 +107,17 @@ Change the "title" to the title of your new entry, and leave the layout as "post
 2. Save the file in ```_posts``` as ```YYYY-MM-DD-your-post-title.md```. It's important to format the file name this way, because it tells Jekyll the date for your post.
 3. Write your entry below the lines in step 1.
 
-As soon as the file for your new entry is save in ```_posts```, it should show up on the locally hosted version of your lab journal (or the next time you run ```jekyll build``` if you're not hosting locally).
+As soon as the file for your new entry is saved in ```_posts```, it should show up on the locally hosted version of your lab journal (or the next time you run ```jekyll build``` if you're not hosting locally).
 
-###Markdown
+###More about Markdown
 
-Markdown is a text-to-HTML tool. It allows you to write good-looking content for the web without using HTML tags. Markdown files look more like regular text files, which makes them easier to read and work with. Markdown processes ```.md``` files to insert all the ugly HTML tags that make text display properly on the web.
-
-Most of the text content for the group website is in Markdown files in the ```_includes``` directory.
+Markdown is a text-to-HTML tool. It allows you to write good-looking content for the web without using HTML tags. Markdown files look more like regular text files, which makes them easier to read and work with.
 
 * This is a useful Markdown cheat sheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
-* And here's an online Markdown editor you can use in your browser: http://dillinger.io/
+Markdown will also process many HTML tags, if you need to sneak some in there (to insert images, for example).
 
-Markdown will also process many HTML tags, if you need to sneak some in there.
+Hosting your lab journal on the College of Engineering webspace
+---------------------------------------------------------------------
+
+If you're a College of Engineering student (which, if you're a physics graduate or undergraduate student, you are) you already have an Engineering Workstation account and some free webspace. 
