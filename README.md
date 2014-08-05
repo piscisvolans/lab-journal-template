@@ -17,6 +17,7 @@ The template given here is a slightly modified version of [Poole](https://github
   * [Hosting your lab journal locally](#hosting-your-lab-journal-locally)
 * [Writing and editing entries](#writing-and-editing-entries)
   * [More about Markdown](#more-about-markdown)
+* [Hosting your lab journal on the College of Engineering webspace](#hosting-your-lab-journal-on-the-college-of-engineering-webspace)
 
 Introduction
 ------------------
@@ -81,7 +82,7 @@ To view your lab journal the way it will look in a browser, you can tell Jekyll 
 jekyll server --watch
 ```
 
-Now you should see the lab journal template if you point your browser to http://localhost:4000.
+Now you should see the lab journal template if you point your browser to http://localhost:4000. You can use your lab journal this way if you want to--or you can [upload it to your College of Engineering webspace](#hosting-your-lab-journal-on-the-college-of-engineering-webspace).
 
 
 Writing and editing entries
@@ -120,4 +121,17 @@ Markdown will also process many HTML tags, if you need to sneak some in there (t
 Hosting your lab journal on the College of Engineering webspace
 ---------------------------------------------------------------------
 
-If you're a College of Engineering student (which, if you're a physics graduate or undergraduate student, you are) you already have an Engineering Workstation account and some free webspace. 
+If you're a College of Engineering student (which, if you're a physics graduate or undergraduate student, you are) you already have an Engineering Workstation account and some free webspace. To access it, go to https://web.engr.illinois.edu and log in with your NetID and AD password.
+
+Under "Files," you can click on "File Manager" to see the files and folders in your webspace. If there's an ```index.html``` in the ```public_html``` folder, it will show up when you go to http://web.engr.illinois.edu/~yournetid/.
+
+To upload your lab journal, it's easier to access your webspace with SSH. Download and install [WinSCP](http://winscp.net/). Log in with the following:
+* Host name: web.engr.illinois.edu
+* User name: Your NetID
+* Password: Your AD password
+
+After logging in, you should see your local files on the left and the files on your webspace to the right. Navigate to your local ```my-lab-journal``` folder, select everything in the ```_site``` folder, and drag it over to the ```public_html``` folder on your webspace. You'll do this every time you update your lab journal--maybe sure to select and copy everything, and choose "yes" if WinSCP asks if you want to overwrite existing files.
+
+Your lab journal should now be live at http://web.engr.illinois.edu/~yournetid/ !
+
+You might want to set a password to restrict access to your lab journal. You can do this easily by clicking on "Password protect directories" under "Security" on the main page at https://web.engr.illinois.edu. Just follow the instructions to add authorized users and corresponding passwords. (Choose the entire ```public_html``` folder as the directory to password protect.)
