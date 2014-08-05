@@ -3,6 +3,8 @@ Lab journal template
 
 This guide was written by Rebecca Holmes. Contact me at rholmes4@illinois.edu if you need help.
 
+The template given here is a slightly modified version of [Poole](https://github.com/poole/poole). Thanks to the Poole developers! This repository aims to provide detailed instructions for set-up and use, not a totally orignal template.
+
 *NOTE: I wrote this guide using Jekyll on Windows 7. Jekyll and the other tools needed to build this project are also available for Mac and Linux, but I don't have any experience using them on other platforms.*
 
 ## Table of Contents
@@ -21,7 +23,7 @@ This guide was written by Rebecca Holmes. Contact me at rholmes4@illinois.edu if
 Introduction
 ------------------
 
-This guide explains how to set up an online lab journal using a tool called Jekyll. You could also set up a lab journal on a blogging service like Wordpress or Blogger, which might be a little more user-friendly. Here are a few reasons to consider doing it with Jekyll:
+This guide explains how to set up an online lab journal using a tool called Jekyll. You could also set up a lab journal on a blogging service like Wordpress or Blogger, which might look less complicated. Here are a few reasons to consider doing it with Jekyll:
 
 1. You have complete control over the appearance and function of your lab journal website. This guide provides a basic template which you can customize any way you want.
 2. All the files for your lab journal will be on your computer, so there will be no need to export them from a blogging service if you need to back up your entries or store them somewhere else. If you're an Illinois engineering student, you can also host your lab journal on your free webspace at http://web.engr.illinois.edu/~yournetid and add optional pasword protection.
@@ -30,29 +32,19 @@ This guide explains how to set up an online lab journal using a tool called Jeky
 Installation and setup
 ------------------
 
-You must complete a few steps before you can maintain the website with Jekyll from your own computer. 
+You must complete a few steps before you can start the lab journal project. Nothing in this guide requires advanced technical knowledge, but you should be able to install software and enter commands in the command prompt.
 
-###Clone this GitHub repository
+###Download the files in this GitHub repository
 
-The GitHub repository group-website-jekyll stores a "master" version of the files needed to generate the website. You can download ("clone") these files to your own computer and use them. If you make changes, you can tell GitHub to sync them to the master version so there will be a single version of the files that multiple people can access.
-
-1. If you don't already have one, you will need to make a [GitHub](https://github.com/) account. You will also need to contact one of the administrators of the lab GitHub group (KwiatQIM) and have your account added to the group.
-
-2. Install and set up [GitHub Desktop for Windows](https://help.github.com/articles/set-up-git#platform-windows).
-
-3. From GitHub Desktop, select the KwiatQIM group, find the repository group-website-jekyll, and click "Clone." This will copy the files from the repository to a folder on your computer.
-
-The [GitHub help page](https://help.github.com/) can tell you more about using GitHub, but the basic idea is as follows:
-* If someone else has made changes to the files in the group-website-jekyll repository, you can (and should) sync them to your local version by clicking "Sync" in the upper right-hand corner of GitHub Desktop. This will keep the copies of the website files on your computer up to date if several people are making changes.
-* If *you* make a change to a file in the respository (edit some text, delete an unneeded file, etc.) you can (and should) save that change to the master version by "committing" the change from GitHub Desktop, which will automatically prompt you whenever it notices that files have changed. Finally, you should click "Sync" to upload your changes to the master version and finalize the change.
+You can download all the necessary files in a .zip by clicking on "Download ZIP" in the sidebar to the right. Extract these files to the folder where you want to keep your lab journal--I keep mine on Dropbox so I can edit it from different computers.
 
 ###Install Ruby and Jekyll
 
-Jekyll is based on the programming language Ruby, which you must install in order to run Jekyll. (You don't need to know how to use Ruby.) Once Ruby is installed, you can easily install Jekyll and a few other necessary programs.
+Jekyll is based on the programming language Ruby. You don't need to know how to use Ruby, but it must be installed on your computer for Jekyll to work.
 
 1. Install Ruby using [RubyInstaller](http://rubyinstaller.org/downloads/). Install the latest DevKit, available on the [RubyInstaller downloads page](http://rubyinstaller.org/downloads/).
 
-2. After extracting the DevKit package, use the command prompt (type `cmd` in the Windows search bar) to `cd` to the directory where you extracted it. Run the following commands:
+2. After extracting the DevKit package, use the command prompt (type `cmd` in the Windows search bar) to `cd` to the folder where you extracted it (I'll call that folder ```my-lab-journal``` in this guide).  Run the following commands:
 
     ```
     ruby dk.rb init
