@@ -21,12 +21,7 @@ This guide was written by Rebecca Holmes. Contact me at rholmes4@illinois.edu if
 Introduction
 ------------------
 
-Would you like to have a cool online lab journal? This guide explains how to set one up using a tool called Jekyll. 
-
-###What is Jekyll?
-Jekyll is a tool that takes pieces of content (like text files) and instructions for displaying them (like HTML layouts) and builds a website. It takes care of tedious things you might otherwise have to do manually, like updating the navbar on each page if you want to add a new link. Another common way to accomplish this is by building a dynamic site using PHP or other server-side languages. The advantages of using Jekyll are primarily that you don't need to learn a server-side language, and the site can be hosted anywhere without worrying about whether the host server supports your dynamic content.
-
-The whole process of building the website happens on your computer, and the result is a static website that can be uploaded to a server. So while using Jekyll might seem intimidating, it's a great way to build a complex website without knowing much more than basic HTML and CSS. Many tasks won't even require more than editing plain old text. You can do it!
+Would you like to have a cool online lab journal? This guide explains how to set one up using a tool called Jekyll. You could also set up a lab journal on a blogging service like 
 
 Installation and setup
 ------------------
