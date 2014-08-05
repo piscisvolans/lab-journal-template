@@ -18,6 +18,9 @@ The template given here is a slightly modified version of [Poole](https://github
 * [Writing and editing entries](#writing-and-editing-entries)
   * [More about Markdown](#more-about-markdown)
 * [Hosting your lab journal on the College of Engineering webspace](#hosting-your-lab-journal-on-the-college-of-engineering-webspace)
+* [Customization](#customization)
+  * [CSS](#css)
+  * [Adding a new page](#adding-a-new-page)
 
 Introduction
 ------------------
@@ -130,8 +133,68 @@ To upload your lab journal, it's easier to access your webspace with SSH. Downlo
 * User name: Your NetID
 * Password: Your AD password
 
-After logging in, you should see your local files on the left and the files on your webspace to the right. Navigate to your local ```my-lab-journal``` folder, select everything in the ```_site``` folder, and drag it over to the ```public_html``` folder on your webspace. You'll do this every time you update your lab journal--maybe sure to select and copy everything, and choose "yes" if WinSCP asks if you want to overwrite existing files.
+After logging in, you should see your local files on the left and the files on your webspace to the right. 
+
+There's one more thing you have to do to make your website display properly on the engineering webspace. Open the file ```my-lab-journal/_config.yml```, and change ```url``` to ```http:///web.engr.illinois.edu/~yournetid``` and ```baseurl``` to ```/~yournetid/```. (You'll need to change both of these back to "/" if you want to host your lab journal locally again.) This is what it should look like:
+
+```
+# Setup
+title:            Rebecca's lab journal
+url:              "http:///web.engr.illinois.edu/~rholmes4"
+paginate:         5
+baseurl:          "/~rholmes4/"
+author:
+  name:           Rebecca Holmes
+  url:            http://research.physics.illinois.edu/QI/Photonics/
+  email:          rholmes4@illinois.edu
+```
+
+If you've been running ```jekyll server --watch```, quit and run jekyll again using ```jekyll build```. Jekyll doesn't automatically implment changes to the ```_config.yml``` file because it's only used when Jekyll first starts running.
+
+Back in WinSCP, navigate to your local ```my-lab-journal``` folder, select everything in the ```_site``` folder, and drag it over to the ```public_html``` folder on your webspace. You'll do this every time you update your lab journal--maybe sure to select and copy everything, and choose "yes" if WinSCP asks if you want to overwrite existing files.
 
 Your lab journal should now be live at http://web.engr.illinois.edu/~yournetid/ !
 
 You might want to set a password to restrict access to your lab journal. You can do this easily by clicking on "Password protect directories" under "Security" on the main page at https://web.engr.illinois.edu. Just follow the instructions to add authorized users and corresponding passwords. (Choose the entire ```public_html``` folder as the directory to password protect.)
+
+Customization
+---------------
+
+###CSS
+To change the appearance of your lab journal, you can edit the CSS file at ```my-lab-journal/public/css/poole.css```. If you're not familiar with css, the simple functions are pretty easy to figure out by experimenting. For example, you can change the main font size by editing the entry
+
+```
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+```
+
+Or change the color of your entry titles by editing...
+```
+.page-title,
+.post-title,
+.post-title a {
+  color: #303030;
+  font-style:italic;
+  font-weight:bold;
+}
+```
+###Adding a new page
+This template only contains an archive page in addition to the home page, but you can add more pages if you want to. For example, you could add a "Reference" page to list common calculations or conventions. To add a page, open up ```_config.yml``` and edit the ```pages_list```:
+```
+pages_list:       
+  Archive: 'archive/'
+  Reference: 'reference/'
+```
+The field ```reference/``` tells Jekyll that the Reference page will be at http://web.engr.illinois.edu/~yournetid/reference/.
+
+Now create the Reference page by making a new file called ```reference.md```. At the very top, put the lines
+```
+ ---
+ layout: page
+ title: Reference
+ ---
+ ```
+ Then write the content for your new page underneath. Save the file and run Jekyll. A link to "Reference," pointing to your new page, should appear next to "Archive."
