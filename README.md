@@ -107,6 +107,8 @@ Change the "title" to the title of your new entry, and leave the layout as "post
 2. Save the file in ```_posts``` as ```YYYY-MM-DD-your-post-title.md```. It's important to format the file name this way, because it tells Jekyll the date for your post.
 3. Write your entry below the lines in step 1.
 
+As soon as the file for your new entry is save in ```_posts```, it should show up on the locally hosted version of your lab journal (or the next time you run ```jekyll build``` if you're not hosting locally).
+
 ###Markdown
 
 Markdown is a text-to-HTML tool. It allows you to write good-looking content for the web without using HTML tags. Markdown files look more like regular text files, which makes them easier to read and work with. Markdown processes ```.md``` files to insert all the ugly HTML tags that make text display properly on the web.
