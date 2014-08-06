@@ -38,7 +38,7 @@ You must complete a few steps before you can start the lab journal project. Noth
 
 ###Download the files in this GitHub repository
 
-You can download all the necessary files in a .zip by clicking on "Download ZIP" in the sidebar to the right. Extract these files to the folder where you want to keep your lab journal--I keep mine on Dropbox so I can edit it from different computers.
+You can download all the necessary files in a .zip by clicking on "Download ZIP" in the sidebar to the right. Extract these files to the folder where you want to keep your lab journal (I'll call this folder ```my-lab-journal``` in this guide). I keep my lab journal files on Dropbox so I can edit from different computers. Putting the files on Dropbox also makes it easy to edit entries with an online Markdown editor, as discussed in [Writing and editing entries](#writing-and-editing-entries).
 
 ###Install Ruby and Jekyll
 
@@ -46,7 +46,7 @@ Jekyll is based on the programming language Ruby. You don't need to know how to 
 
 1. Install Ruby using [RubyInstaller](http://rubyinstaller.org/downloads/). Install the latest DevKit, available on the [RubyInstaller downloads page](http://rubyinstaller.org/downloads/).
 
-2. After extracting the DevKit package, use the command prompt (type `cmd` in the Windows search bar) to `cd` to the folder where you extracted it (I'll call that folder ```my-lab-journal``` in this guide).  Run the following commands:
+2. After extracting the DevKit package, use the command prompt (type `cmd` in the Windows search bar) to `cd` to the folder where you extracted it.  Run the following commands:
 
     ```
     ruby dk.rb init
@@ -67,7 +67,7 @@ Jekyll is based on the programming language Ruby. You don't need to know how to 
 
 Running Jekyll
 ------------------
-If you've just downloaded the project files from GitHub and you and haven't run Jekyll yet, the ```_site``` directory in ```my-lab-journal``` should be empty. When you run Jekyll, ```_site``` is where all the assembled pieces of the website will go--the finished product. You shouldn't edit the files in ```_site```, because they will be overwritten every time you run Jekyll. To make changes, you'll edit files in ```my-lab-journal``` and Jekyll will update the website for you.
+If you've just downloaded the project files from GitHub and you and haven't run Jekyll yet, the ```_site``` directory in ```my-lab-journal``` (or whatever you named your folder) should be empty. When you run Jekyll, ```_site``` is where all the assembled pieces of the website will go--the finished product. You shouldn't edit the files in ```_site```, because they will be overwritten every time you run Jekyll. To make changes, you'll edit files in ```my-lab-journal``` and Jekyll will update the website for you.
 
 To run Jekyll and fill the empty ```_site``` directory with the assembled website, use the command prompt to ```cd``` to ```my-lab-journal```. Then just enter the command
 
