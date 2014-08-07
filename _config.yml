@@ -9,7 +9,7 @@ permalink:        pretty
 title:            My lab journal
 url:              /
 paginate:         5
-baseurl:          /
+baseurl:          ""
 author:
   name:           Your Name
   url:            http://research.physics.illinois.edu/QI/Photonics/
