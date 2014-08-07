@@ -135,7 +135,7 @@ To upload your lab journal, it's easier to access your webspace with SSH. Downlo
 
 After logging in, you should see your local files on the left and the files on your webspace to the right. 
 
-There's one more thing you have to do to make your website display properly on the engineering webspace. Open the file ```my-lab-journal/_config.yml```, and change ```url``` to ```http:///web.engr.illinois.edu/~yournetid``` and ```baseurl``` to ```/~yournetid/```. (You'll need to change both of these back to "/" if you want to host your lab journal locally again.) This is what it should look like:
+There's one more thing you have to do to make your website display properly on the engineering webspace. Open the file ```my-lab-journal/_config.yml```, and change ```url``` to ```http:///web.engr.illinois.edu/~yournetid``` and ```baseurl``` to ```/~yournetid/```. (You'll need to change both of these back to "" if you want to host your lab journal locally again.) This is what it should look like:
 
 ```
 # Setup
