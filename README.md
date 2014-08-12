@@ -44,7 +44,7 @@ You can download all the necessary files in a .zip by clicking on "Download ZIP"
 
 ###Install Ruby and Jekyll
 
-Jekyll is based on the programming language Ruby. You don't need to know how to use Ruby, but it must be installed on your computer for Jekyll to work.
+Jekyll is based on the programming language Ruby. You don't need to know how to use Ruby, but it must be installed on your computer for Jekyll to work. (If you're running OS X, you already have Ruby. Skip steps 1 and 2.)
 
 1. Install Ruby using [RubyInstaller](http://rubyinstaller.org/downloads/). Install the latest DevKit, available on the [RubyInstaller downloads page](http://rubyinstaller.org/downloads/).
 
