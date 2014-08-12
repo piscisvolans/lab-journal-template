@@ -29,7 +29,7 @@ This guide explains how to set up an online lab journal using a tool called Jeky
 
 1. You have complete control over the appearance and function of your lab journal website. This guide provides a basic template which you can customize any way you want.
 2. All the files for your lab journal will be on your computer, so there will be no need to export them from a blogging service if you need to back up your entries or store them somewhere else. If you're an Illinois engineering student, you can also host your lab journal on your free webspace at http://web.engr.illinois.edu/~yournetid and add optional pasword protection.
-3. You can learn about building and hosting websites!
+3. You can learn about building and hosting websites! Yay!
 
 Installation and setup
 ------------------
@@ -135,14 +135,14 @@ To upload your lab journal, it's easier to access your webspace with SSH. Downlo
 
 After logging in, you should see your local files on the left and the files on your webspace to the right. 
 
-There's one more thing you have to do to make your website display properly on the engineering webspace. Open the file ```my-lab-journal/_config.yml```, and change ```url``` to ```http:///web.engr.illinois.edu/~yournetid``` and ```baseurl``` to ```/~yournetid/```. (You'll need to change both of these back to "" if you want to host your lab journal locally again.) This is what it should look like:
+There's one more thing you have to do to make your website display properly on the engineering webspace. Open the file ```my-lab-journal/_config.yml```, and change ```url``` to ```http:///web.engr.illinois.edu/~yournetid``` and ```baseurl``` to ```/~yournetid```. (You'll need to change both of these back to "" if you want to host your lab journal locally again.) This is what it should look like:
 
 ```
 # Setup
 title:            Rebecca's lab journal
 url:              "http:///web.engr.illinois.edu/~rholmes4"
 paginate:         5
-baseurl:          "/~rholmes4/"
+baseurl:          "/~rholmes4"
 author:
   name:           Rebecca Holmes
   url:            http://research.physics.illinois.edu/QI/Photonics/
@@ -185,10 +185,10 @@ Or change the color of your entry titles by editing...
 This template only contains an archive page in addition to the home page, but you can add more pages if you want to. For example, you could add a "Reference" page to list common calculations or conventions. To add a page, open up ```_config.yml``` and edit the ```pages_list```:
 ```
 pages_list:       
-  Archive: 'archive/'
-  Reference: 'reference/'
+  Archive: 'archive'
+  Reference: 'reference'
 ```
-The field ```reference/``` tells Jekyll that the Reference page will be at http://web.engr.illinois.edu/~yournetid/reference/.
+The field ```reference``` tells Jekyll that the Reference page will be at http://web.engr.illinois.edu/~yournetid/reference.
 
 Now create the Reference page by making a new file called ```reference.md```. At the very top, put the lines
 ```
