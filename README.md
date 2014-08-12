@@ -7,7 +7,7 @@ The template given here is a slightly modified version of [Poole](https://github
 
 *NOTE: I wrote this guide using Jekyll on Windows 7. Jekyll and the other tools needed to build this project are also available for Mac and Linux, but I don't have any experience using them on other platforms.*
 
-<img src="https://raw.githubusercontent.com/piscisvolans/lab-journal-template/master/public/img/lab-journal-preview.png" border="1px gray">
+<img src="https://raw.githubusercontent.com/piscisvolans/lab-journal-template/master/public/img/lab-journal-preview.png" style="border:1px gray">
 
 ## Table of Contents
 
