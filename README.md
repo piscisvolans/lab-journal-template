@@ -95,7 +95,7 @@ Now you should see the lab journal template if you point your browser to http://
 Writing and editing entries
 --------------------------
 
-Jekyll uses Markdown, a way of formatting text for the web without using HTML tags. To take advantage of this, I suggest using a Markdown editor to write and edit your entries. This is easiest if your lab journal files are on Dropbox. If they are, go to http://dillinger.io and click on "Dropbox." Select "Link with Dropbox," then "Import from Dropbox." Import the file ```2014-08-01-example-content.md``` in ```my-lab-journal/_posts```.
+Jekyll supports Markdown, a way of formatting text for the web without using HTML tags. To take advantage of this, I suggest using a Markdown editor to write and edit your entries. This is easiest if your lab journal files are on Dropbox. If they are, go to http://dillinger.io and click on "Dropbox." Select "Link with Dropbox," then "Import from Dropbox." Import the file ```2014-08-01-example-content.md``` in ```my-lab-journal/_posts```.
 
 If you lab journal files are not on Dropbox, you can open ```2014-08-01-example-content.md``` with a a text editor (I recommend [Notepad++](http://notepad-plus-plus.org/)).
 
@@ -110,7 +110,7 @@ Now try making a new entry. All new entries should follow these steps:
     title: Example content
     ---
     ```
-Change the "title" to the title of your new entry, and leave the layout as "post."
+If you want to know, this is called YAML frontmatter. Change the "title" to the title of your new entry, and leave the layout as "post."
 
 2. Save the file in ```_posts``` as ```YYYY-MM-DD-your-post-title.md```. It's important to format the file name this way, because it tells Jekyll the date for your post.
 3. Write your entry below the lines in step 1.
@@ -123,7 +123,7 @@ Markdown is a text-to-HTML tool. It allows you to write good-looking content for
 
 * This is a useful Markdown cheat sheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
-Markdown will also process many HTML tags, if you need to sneak some in there (to insert images, for example).
+Markdown will also process many HTML tags, if you need to sneak some in there (to insert images, for example). And Jekyll will process HTML files as posts, too&mdash;as long as you start the file with two lines of ```---```.
 
 Hosting your lab journal on the College of Engineering webspace
 ---------------------------------------------------------------------
