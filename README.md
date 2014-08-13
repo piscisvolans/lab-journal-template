@@ -97,9 +97,9 @@ Writing and editing entries
 
 Jekyll supports Markdown, a way of formatting text for the web without using HTML tags. To take advantage of this, I suggest using a Markdown editor to write and edit your entries. This is easiest if your lab journal files are on Dropbox. If they are, go to http://dillinger.io and click on "Dropbox." Select "Link with Dropbox," then "Import from Dropbox." Import the file ```2014-08-01-example-content.md``` in ```my-lab-journal/_posts```.
 
-If you lab journal files are not on Dropbox, you can open ```2014-08-01-example-content.md``` with a a text editor (I recommend [Notepad++](http://notepad-plus-plus.org/)).
+If you lab journal files are not on Dropbox, you can still use Dillinger, but you'll need to copy and paste the contents of ```2014-08-01-example-content.md``` into the editor, then export your file when you want to save it to your lab journal directory. (Go to Utilities > Export as Markdown File). You can also just open ```2014-08-01-example-content.md``` with a a text editor (I recommend [Notepad++](http://notepad-plus-plus.org/)).
 
-```2014-08-01-example-content.md``` contains some examples of how you can use Markdown and HTML tags to format your text and to insert images and links. If you followed the steps in [Hosting your lab journal locally](#hosting-your-lab-journal-locally) above, Jekyll should automatically implement any changes--try adding some text to ```2014-08-01-example-content.md```, save the file (on Dillinger, do this under the "Dropbox" menu), refresh the page in your browswer, and see if the changes appear.
+```2014-08-01-example-content.md``` contains some examples of how you can use Markdown and HTML tags to format your text and to insert images and links. If you followed the steps in [Hosting your lab journal locally](#hosting-your-lab-journal-locally) above, Jekyll should automatically implement any changes--try adding some text to ```2014-08-01-example-content.md```, save the file (on Dillinger, do this under the "Dropbox" menu), refresh the page in your browser, and see if the changes appear.
 
 Now try making a new entry. All new entries should follow these steps:
 
