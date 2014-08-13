@@ -27,7 +27,7 @@ The template given here is a slightly modified version of [Poole](https://github
 Introduction
 ------------------
 
-This guide explains how to set up an online lab journal using a tool called Jekyll. You could also set up a lab journal on a blogging service like Wordpress or Blogger, which might seem less complicated. Here are a few reasons to consider doing it with Jekyll:
+This guide explains how to set up an online lab journal/lab notebook using a tool called Jekyll. You could also set up a lab journal on a blogging service like Wordpress or Blogger, which might seem less complicated. Here are a few reasons to consider doing it with Jekyll:
 
 1. You have complete control over the appearance and function of your lab journal website. This guide provides a basic template which you can customize any way you want.
 2. All the files for your lab journal will be on your computer, so there will be no need to export them from a blogging service if you need to back up your entries or store them somewhere else. If you're an Illinois engineering student, you can also host your lab journal on your free webspace at http://web.engr.illinois.edu/~yournetid and add optional pasword protection.
