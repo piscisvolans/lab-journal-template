@@ -42,6 +42,8 @@ You must complete a few steps before you can start the lab journal project. Noth
 
 You can download all the necessary files in a .zip by clicking on "Download ZIP" in the sidebar to the right. Extract these files to the folder where you want to keep your lab journal (I'll call this folder ```my-lab-journal``` in this guide). I keep my lab journal files on Dropbox so I can edit from different computers. Putting the files on Dropbox also makes it easy to edit entries with an online Markdown editor, as discussed in [Writing and editing entries](#writing-and-editing-entries).
 
+If you're familiar with GitHub and want version control, feel free to just clone the repository and use it with your own account.
+
 ###Install Ruby and Jekyll
 
 Jekyll is based on the programming language Ruby. You don't need to know how to use Ruby, but it must be installed on your computer for Jekyll to work. (If you're running OS X, you already have Ruby. Skip steps 1 and 2.)
