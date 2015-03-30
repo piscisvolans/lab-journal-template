@@ -117,6 +117,14 @@ If you want to know, this is called YAML frontmatter. Change the "title" to the 
 
 As soon as the file for your new entry is saved in ```_posts```, it should show up on the locally hosted version of your lab journal (or the next time you run ```jekyll build``` if you're not hosting locally).
 
+###Inserting images
+
+To insert images in your posts, use
+
+```<img src="{{ site.baseurl }}/public/img/YOURIMAGENAME.jpg">```
+
+where ```YOURIMAGENAME.jpg``` is the name of your image file. Put all your images in the ```public/img``` folder. The ```{{ site.baseurl }}``` will be useful when you decide to host your lab journal on the College of Engineering web space (or somewhere else); see below.
+
 ###More about Markdown
 
 Markdown is a text-to-HTML tool. It allows you to write good-looking content for the web without using HTML tags. Markdown files look more like regular text files, which makes them easier to read and work with.
@@ -139,7 +147,7 @@ To upload your lab journal, it's easier to access your webspace with SSH. Downlo
 
 After logging in, you should see your local files on the left and the files on your webspace to the right. 
 
-There's one more thing you have to do to make your website display properly on the engineering webspace. Open the file ```my-lab-journal/_config.yml```, and change ```url``` to ```http:///web.engr.illinois.edu/~yournetid``` and ```baseurl``` to ```/~yournetid```. (You'll need to change both of these back to "" if you want to host your lab journal locally again.) This is what it should look like:
+There's one more thing you have to do to make your website display properly on the engineering webspace. Open the file ```my-lab-journal/_config.yml```, and change ```url``` to ```http:///web.engr.illinois.edu/~yournetid``` and ```baseurl``` to ```/~yournetid```. This is what it should look like:
 
 ```
 # Setup
@@ -154,6 +162,8 @@ author:
 ```
 
 If you've been running ```jekyll server --watch```, quit and run jekyll again using ```jekyll build```. Jekyll doesn't automatically implement changes to the ```_config.yml``` file because it's only used when Jekyll first starts running.
+
+**Important: After making this change, you'll need to go to http://localhost:4000/~yournetid when you host your site locally.**
 
 Back in WinSCP, navigate to your local ```my-lab-journal``` folder, select everything in the ```_site``` folder, and drag it over to the ```public_html``` folder on your webspace. You'll do this every time you update your lab journal--maybe sure to select and copy everything, and choose "yes" if WinSCP asks if you want to overwrite existing files.
 
