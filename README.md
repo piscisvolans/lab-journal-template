@@ -99,6 +99,8 @@ Jekyll supports Markdown, a way of formatting text for the web without using HTM
 
 If you lab journal files are not on Dropbox, you can still use Dillinger, but you'll need to copy and paste the contents of ```2014-08-01-example-content.md``` into the editor, then export your file when you want to save it to your lab journal directory. (Go to Utilities > Export as Markdown File). You can also just open ```2014-08-01-example-content.md``` with a a text editor (I recommend [Notepad++](http://notepad-plus-plus.org/)).
 
+**Dillinger has become a little less convenient to use with Dropbox lately. Using [Notepad++](https://notepad-plus-plus.org/) is also a good option.**
+
 ```2014-08-01-example-content.md``` contains some examples of how you can use Markdown and HTML tags to format your text and to insert images and links. If you followed the steps in [Hosting your lab journal locally](#hosting-your-lab-journal-locally) above, Jekyll should automatically implement any changes--try adding some text to ```2014-08-01-example-content.md```, save the file (on Dillinger, do this under the "Dropbox" menu), refresh the page in your browser, and see if the changes appear.
 
 Now try making a new entry. All new entries should follow these steps:
