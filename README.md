@@ -38,13 +38,13 @@ Installation and setup
 
 You must complete a few steps before you can start the lab journal project. Nothing in this guide requires advanced technical knowledge, but you should be able to install software and enter commands in the command prompt.
 
-###Download the files in this GitHub repository
+### Download the files in this GitHub repository
 
 You can download all the necessary files in a .zip by clicking on "Download ZIP" in the sidebar to the right. Extract these files to the folder where you want to keep your lab journal (I'll call this folder ```my-lab-journal``` in this guide). I keep my lab journal files on Dropbox so I can edit from different computers. Putting the files on Dropbox also makes it easy to edit entries with an online Markdown editor, as discussed in [Writing and editing entries](#writing-and-editing-entries).
 
 If you're familiar with GitHub and want version control, feel free to just clone the repository and use it with your own account.
 
-###Install Ruby and Jekyll
+### Install Ruby and Jekyll
 
 Jekyll is based on the programming language Ruby. You don't need to know how to use Ruby, but it must be installed on your computer for Jekyll to work. (If you're running OS X, you already have Ruby. Skip steps 1 and 2.)
 
@@ -81,7 +81,7 @@ jekyll build
 
 That's it! The ```_site``` directory should now be populated with the website files. 
 
-###Hosting your lab journal locally
+### Hosting your lab journal locally
 
 To view your lab journal the way it will look in a browser, you can tell Jekyll to host it from your computer. You can also turn on automatic updates, so Jekyll will automatically rebuild the site whenever you make changes. To do both of these things, run Jekyll using the ```server``` command with ```--watch```:
 
@@ -176,7 +176,7 @@ You might want to set a password to restrict access to your lab journal. You can
 Customization
 ---------------
 
-###CSS
+### CSS
 To change the appearance of your lab journal, you can edit the CSS file at ```my-lab-journal/public/css/poole.css```. If you're not familiar with css, the simple functions are pretty easy to figure out by experimenting. For example, you can change the main font size by editing the entry
 
 ```
@@ -197,7 +197,7 @@ Or change the color of your entry titles by editing...
   font-weight:bold;
 }
 ```
-###Adding a new page
+### Adding a new page
 This template only contains an archive page in addition to the home page, but you can add more pages if you want to. For example, you could add a "Reference" page to list common calculations or conventions. To add a page, open up ```_config.yml``` and edit the ```pages_list```:
 ```
 pages_list:       
