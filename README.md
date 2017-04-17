@@ -119,7 +119,7 @@ If you want to know, this is called YAML frontmatter. Change the "title" to the 
 
 As soon as the file for your new entry is saved in ```_posts```, it should show up on the locally hosted version of your lab journal (or the next time you run ```jekyll build``` if you're not hosting locally).
 
-###Inserting images
+### Inserting images
 
 To insert images in your posts, use
 
@@ -127,7 +127,7 @@ To insert images in your posts, use
 
 where ```YOURIMAGENAME.jpg``` is the name of your image file. Put all your images in the ```public/img``` folder. The ```{{ site.baseurl }}``` will be useful when you decide to host your lab journal on the College of Engineering web space (or somewhere else); see below.
 
-###More about Markdown
+### More about Markdown
 
 Markdown is a text-to-HTML tool. It allows you to write good-looking content for the web without using HTML tags. Markdown files look more like regular text files, which makes them easier to read and work with.
 
